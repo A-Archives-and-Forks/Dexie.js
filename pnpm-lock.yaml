@@ -136,10 +136,10 @@ importers:
     dependencies:
       dexie:
         specifier: ^4.0.1-alpha.5
-        version: link:../..
+        version: 4.0.7
       dexie-cloud-common:
         specifier: ^1.0.31
-        version: link:../../libs/dexie-cloud-common
+        version: 1.0.34
       rxjs:
         specifier: ^7.x
         version: 7.5.6
@@ -261,7 +261,7 @@ importers:
         version: 17.0.17
       dexie:
         specifier: ^3.2 || ^4.0.1-alpha
-        version: link:../..
+        version: 4.0.7
       just-build:
         specifier: ^0.9.24
         version: 0.9.24
@@ -345,10 +345,10 @@ importers:
         version: 5.3.0(@popperjs/core@2.11.8)
       dexie:
         specifier: ^4.0.1-alpha.27
-        version: link:../..
+        version: 4.0.7
       dexie-cloud-addon:
         specifier: ^4.0.1-beta.48
-        version: link:../../addons/dexie-cloud
+        version: 4.0.7(dexie@4.0.7)
       dexie-react-hooks:
         specifier: ^1.1.6
         version: link:../../libs/dexie-react-hooks
@@ -2313,6 +2313,7 @@ packages:
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
     dependencies:
       '@humanwhocodes/object-schema': 2.0.1
       debug: 4.3.4
@@ -2343,6 +2344,7 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.1:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
+    deprecated: Use @eslint/object-schema instead
     dev: false
 
   /@istanbuljs/load-nyc-config@1.1.0:
@@ -2733,7 +2735,7 @@ packages:
       react-refresh: 0.11.0
       schema-utils: 3.1.1
       source-map: 0.7.3
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
       webpack-dev-server: 4.15.0(webpack@5.74.0)
     dev: false
 
@@ -3964,6 +3966,14 @@ packages:
       acorn-walk: 7.2.0
     dev: false
 
+  /acorn-import-assertions@1.8.0(acorn@8.11.2):
+    resolution: {integrity: sha512-m7VZ3jwz4eK6A4Vtt8Ew1/mNbP24u0FhdyfA7fSvnJR6LMdfOYnmuIrrJAgrYfYJ10F/otaHTtrtrtmHdMNzEw==}
+    peerDependencies:
+      acorn: ^8
+    dependencies:
+      acorn: 8.11.2
+    dev: false
+
   /acorn-import-assertions@1.8.0(acorn@8.8.0):
     resolution: {integrity: sha512-m7VZ3jwz4eK6A4Vtt8Ew1/mNbP24u0FhdyfA7fSvnJR6LMdfOYnmuIrrJAgrYfYJ10F/otaHTtrtrtmHdMNzEw==}
     peerDependencies:
@@ -4439,7 +4449,7 @@ packages:
       loader-utils: 2.0.2
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /babel-plugin-istanbul@6.1.1:
@@ -4743,10 +4753,10 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001388
-      electron-to-chromium: 1.4.241
-      node-releases: 2.0.6
-      update-browserslist-db: 1.0.7(browserslist@4.21.3)
+      caniuse-lite: 1.0.30001495
+      electron-to-chromium: 1.4.423
+      node-releases: 2.0.12
+      update-browserslist-db: 1.0.11(browserslist@4.21.3)
 
   /browserslist@4.21.7:
     resolution: {integrity: sha512-BauCXrQ7I2ftSqd2mvKHGo85XR0u7Ru3C/Hxsy/0TkfCtjrmAbPdzLGasmoiBxplpDXlPvdjX9u7srIMfgasNA==}
@@ -4837,12 +4847,8 @@ packages:
       lodash.uniq: 4.5.0
     dev: false
 
-  /caniuse-lite@1.0.30001388:
-    resolution: {integrity: sha512-znVbq4OUjqgLxMxoNX2ZeeLR0d7lcDiE5uJ4eUiWdml1J1EkxbnQq6opT9jb9SMfJxB0XA16/ziHwni4u1I3GQ==}
-
   /caniuse-lite@1.0.30001495:
     resolution: {integrity: sha512-F6x5IEuigtUfU5ZMQK2jsy5JqUUlEFRVZq8bO2a+ysq5K7jD6PPc9YXZj78xDNS3uNchesp1Jw47YXEqr+Viyg==}
-    dev: false
 
   /case-sensitive-paths-webpack-plugin@2.4.0:
     resolution: {integrity: sha512-roIFONhcxog0JSSWbvVAh3OocukmSgpqOH6YpMkCvav/ySIV3JKg4Dc8vYtQjYi/UxpNE36r/9v+VqTQqgkYmw==}
@@ -5308,7 +5314,7 @@ packages:
       postcss-modules-values: 4.0.0(postcss@8.4.24)
       postcss-value-parser: 4.2.0
       semver: 7.5.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /css-minimizer-webpack-plugin@3.4.1(webpack@5.74.0):
@@ -5336,7 +5342,7 @@ packages:
       schema-utils: 4.0.1
       serialize-javascript: 6.0.1
       source-map: 0.6.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /css-prefers-color-scheme@6.0.3(postcss@8.4.24):
@@ -5675,6 +5681,24 @@ packages:
       - supports-color
     dev: false
 
+  /dexie-cloud-addon@4.0.7(dexie@4.0.7):
+    resolution: {integrity: sha512-zc+cqkf9YtaLGluHQJ6DpW3se4BCrYhSuIlFJ8Y/7FYLn5KC8gIG6SNZeY0FaGydFjTqZC/7lZz72UcavBqdBg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      dexie: ^4.0.1-alpha.5
+    dependencies:
+      dexie: 4.0.7
+      dexie-cloud-common: 1.0.34
+      rxjs: 7.5.6
+    dev: false
+
+  /dexie-cloud-common@1.0.34:
+    resolution: {integrity: sha512-ayq04RKKZI/ldCc9gcm1WVAXMevHlupGfBRUDT1uUmjgrctjIIXRyJrAk1rL/d66S+rSGtKrJqoRS0pgUpLWKA==}
+    dev: false
+
+  /dexie@4.0.7:
+    resolution: {integrity: sha512-M+Lo6rk4pekIfrc2T0o2tvVJwL6EAAM/B78DNfb8aaxFVoI1f8/rz5KTxuAnApkwqTSuxx7T5t0RKH7qprapGg==}
+
   /di@0.0.1:
     resolution: {integrity: sha512-uJaamHkagcZtHPqCIHZxnFrXlunQXgBOsZSUOWwFw31QJCAbyTBoHMW75YOTur5ZNx8pIeAKgf6GWIgaqqiLhA==}
     dev: true
@@ -5858,12 +5882,8 @@ packages:
       jake: 10.8.7
     dev: false
 
-  /electron-to-chromium@1.4.241:
-    resolution: {integrity: sha512-e7Wsh4ilaioBZ5bMm6+F4V5c11dh56/5Jwz7Hl5Tu1J7cnB+Pqx5qIF2iC7HPpfyQMqGSvvLP5bBAIDd2gAtGw==}
-
   /electron-to-chromium@1.4.423:
     resolution: {integrity: sha512-y4A7YfQcDGPAeSWM1IuoWzXpg9RY1nwHzHSwRtCSQFp9FgAVDgdWlFf0RbdWfLWQ2WUI+bddUgk5RgTjqRE6FQ==}
-    dev: false
 
   /email-addresses@5.0.0:
     resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
@@ -5942,7 +5962,7 @@ packages:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.12
-      '@types/node': 18.11.18
+      '@types/node': 20.2.5
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
@@ -6413,7 +6433,7 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       schema-utils: 4.0.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /eslint@5.16.0:
@@ -6824,7 +6844,7 @@ packages:
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.1.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /filelist@1.0.4:
@@ -7003,7 +7023,7 @@ packages:
       semver: 7.5.1
       tapable: 1.1.3
       typescript: 4.9.5
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /form-data@2.3.3:
@@ -7459,7 +7479,7 @@ packages:
       lodash: 4.17.21
       pretty-error: 4.0.0
       tapable: 2.2.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /htmlparser2@6.1.0:
@@ -8697,7 +8717,7 @@ packages:
         optional: true
     dependencies:
       abab: 2.0.6
-      acorn: 8.10.0
+      acorn: 8.11.2
       acorn-globals: 6.0.0
       cssom: 0.4.4
       cssstyle: 2.3.0
@@ -9292,7 +9312,7 @@ packages:
       webpack: ^5.0.0
     dependencies:
       schema-utils: 4.0.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /minimalistic-assert@1.0.1:
@@ -9425,10 +9445,6 @@ packages:
 
   /node-releases@2.0.12:
     resolution: {integrity: sha512-QzsYKWhXTWx8h1kIvqfnC++o0pEmpRQA/aenALsL2F4pqNVr7YzcdMlDij5WBnwftRbJCNJL/O7zdKaxKPHqgQ==}
-    dev: false
-
-  /node-releases@2.0.6:
-    resolution: {integrity: sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==}
 
   /node-watch@0.7.2:
     resolution: {integrity: sha512-g53VjSARRv1JdST0LZRIg8RiuLr1TaBbVPsVvxh0/0Ymvi0xYUjDuoqQQAWtHJQUXhiShowPT/aXKNeHBcyQsw==}
@@ -10149,7 +10165,7 @@ packages:
       klona: 2.0.6
       postcss: 8.4.24
       semver: 7.5.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /postcss-logical@5.0.4(postcss@8.4.24):
@@ -10898,7 +10914,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.21.4
       address: 1.2.2
-      browserslist: 4.21.3
+      browserslist: 4.21.7
       chalk: 4.1.2
       cross-spawn: 7.0.3
       detect-port-alt: 1.1.6
@@ -10921,7 +10937,7 @@ packages:
       strip-ansi: 6.0.1
       text-table: 0.2.0
       typescript: 4.9.5
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -11020,7 +11036,7 @@ packages:
       tailwindcss: 3.3.2
       terser-webpack-plugin: 5.3.6(uglify-js@3.14.2)(webpack@5.74.0)
       typescript: 4.9.5
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
       webpack-dev-server: 4.15.0(webpack@5.74.0)
       webpack-manifest-plugin: 4.1.1(webpack@5.74.0)
       workbox-webpack-plugin: 6.6.0(webpack@5.74.0)
@@ -11662,7 +11678,7 @@ packages:
     dependencies:
       klona: 2.0.6
       neo-async: 2.6.2
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /sax@1.2.4:
@@ -12044,7 +12060,7 @@ packages:
       abab: 2.0.6
       iconv-lite: 0.6.3
       source-map-js: 1.0.2
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /source-map-resolve@0.6.0:
@@ -12406,7 +12422,7 @@ packages:
     peerDependencies:
       webpack: ^5.0.0
     dependencies:
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /stylehacks@5.1.1(postcss@8.4.24):
@@ -13036,6 +13052,16 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
+  /update-browserslist-db@1.0.11(browserslist@4.21.3):
+    resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
+    dependencies:
+      browserslist: 4.21.3
+      escalade: 3.1.1
+      picocolors: 1.0.0
+
   /update-browserslist-db@1.0.11(browserslist@4.21.7):
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
     hasBin: true
@@ -13046,16 +13072,6 @@ packages:
       escalade: 3.1.1
       picocolors: 1.0.0
     dev: false
-
-  /update-browserslist-db@1.0.7(browserslist@4.21.3):
-    resolution: {integrity: sha512-iN/XYesmZ2RmmWAiI4Z5rq0YqSiv0brj9Ce9CfhNE4xIW2h+MFxcgkxIzZ+ShkFPUkjU3gQ+3oypadD3RAMtrg==}
-    hasBin: true
-    peerDependencies:
-      browserslist: '>= 4.21.0'
-    dependencies:
-      browserslist: 4.21.3
-      escalade: 3.1.1
-      picocolors: 1.0.0
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
@@ -13252,7 +13268,7 @@ packages:
       mime-types: 2.1.35
       range-parser: 1.2.1
       schema-utils: 4.0.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
     dev: false
 
   /webpack-dev-server@4.15.0(webpack@5.74.0):
@@ -13296,7 +13312,7 @@ packages:
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
       webpack-dev-middleware: 5.3.3(webpack@5.74.0)
       ws: 8.13.0
     transitivePeerDependencies:
@@ -13313,7 +13329,7 @@ packages:
       webpack: ^4.44.2 || ^5.47.0
     dependencies:
       tapable: 2.2.1
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
       webpack-sources: 2.3.1
     dev: false
 
@@ -13342,6 +13358,46 @@ packages:
   /webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
+
+  /webpack@5.74.0(uglify-js@3.14.2):
+    resolution: {integrity: sha512-A2InDwnhhGN4LYctJj6M1JEaGL7Luj6LOmyBHjcI8529cm5p6VXiTIW2sn6ffvEAKmveLzvu4jrihwXtPojlAA==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    peerDependencies:
+      webpack-cli: '*'
+    peerDependenciesMeta:
+      webpack-cli:
+        optional: true
+    dependencies:
+      '@types/eslint-scope': 3.7.4
+      '@types/estree': 0.0.51
+      '@webassemblyjs/ast': 1.11.1
+      '@webassemblyjs/wasm-edit': 1.11.1
+      '@webassemblyjs/wasm-parser': 1.11.1
+      acorn: 8.11.2
+      acorn-import-assertions: 1.8.0(acorn@8.11.2)
+      browserslist: 4.21.7
+      chrome-trace-event: 1.0.3
+      enhanced-resolve: 5.10.0
+      es-module-lexer: 0.9.3
+      eslint-scope: 5.1.1
+      events: 3.3.0
+      glob-to-regexp: 0.4.1
+      graceful-fs: 4.2.11
+      json-parse-even-better-errors: 2.3.1
+      loader-runner: 4.3.0
+      mime-types: 2.1.35
+      neo-async: 2.6.2
+      schema-utils: 3.1.1
+      tapable: 2.2.1
+      terser-webpack-plugin: 5.3.6(uglify-js@3.14.2)(webpack@5.74.0)
+      watchpack: 2.4.0
+      webpack-sources: 3.2.3
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+    dev: false
 
   /webpack@5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0):
     resolution: {integrity: sha512-A2InDwnhhGN4LYctJj6M1JEaGL7Luj6LOmyBHjcI8529cm5p6VXiTIW2sn6ffvEAKmveLzvu4jrihwXtPojlAA==}
@@ -13709,7 +13765,7 @@ packages:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.6.0
       upath: 1.2.0
-      webpack: 5.74.0(uglify-js@3.14.2)(webpack-cli@4.10.0)
+      webpack: 5.74.0(uglify-js@3.14.2)
       webpack-sources: 1.4.3
       workbox-build: 6.6.0
     transitivePeerDependencies:
