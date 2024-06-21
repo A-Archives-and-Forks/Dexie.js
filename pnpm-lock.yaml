@@ -136,10 +136,10 @@ importers:
     dependencies:
       dexie:
         specifier: ^4.0.1-alpha.5
-        version: link:../..
+        version: 4.0.7
       dexie-cloud-common:
         specifier: ^1.0.31
-        version: link:../../libs/dexie-cloud-common
+        version: 1.0.34
       rxjs:
         specifier: ^7.x
         version: 7.5.6
@@ -261,7 +261,7 @@ importers:
         version: 17.0.17
       dexie:
         specifier: ^3.2 || ^4.0.1-alpha
-        version: link:../..
+        version: 4.0.7
       just-build:
         specifier: ^0.9.24
         version: 0.9.24
@@ -345,10 +345,10 @@ importers:
         version: 5.3.0(@popperjs/core@2.11.8)
       dexie:
         specifier: ^4.0.1-alpha.27
-        version: link:../..
+        version: 4.0.7
       dexie-cloud-addon:
         specifier: ^4.0.1-beta.48
-        version: link:../../addons/dexie-cloud
+        version: 4.0.7(dexie@4.0.7)
       dexie-react-hooks:
         specifier: ^1.1.6
         version: link:../../libs/dexie-react-hooks
@@ -2313,6 +2313,7 @@ packages:
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
     dependencies:
       '@humanwhocodes/object-schema': 2.0.1
       debug: 4.3.4
@@ -2343,6 +2344,7 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.1:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
+    deprecated: Use @eslint/object-schema instead
     dev: false
 
   /@istanbuljs/load-nyc-config@1.1.0:
@@ -4743,10 +4745,10 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001388
-      electron-to-chromium: 1.4.241
-      node-releases: 2.0.6
-      update-browserslist-db: 1.0.7(browserslist@4.21.3)
+      caniuse-lite: 1.0.30001495
+      electron-to-chromium: 1.4.423
+      node-releases: 2.0.12
+      update-browserslist-db: 1.0.11(browserslist@4.21.3)
 
   /browserslist@4.21.7:
     resolution: {integrity: sha512-BauCXrQ7I2ftSqd2mvKHGo85XR0u7Ru3C/Hxsy/0TkfCtjrmAbPdzLGasmoiBxplpDXlPvdjX9u7srIMfgasNA==}
@@ -4837,12 +4839,8 @@ packages:
       lodash.uniq: 4.5.0
     dev: false
 
-  /caniuse-lite@1.0.30001388:
-    resolution: {integrity: sha512-znVbq4OUjqgLxMxoNX2ZeeLR0d7lcDiE5uJ4eUiWdml1J1EkxbnQq6opT9jb9SMfJxB0XA16/ziHwni4u1I3GQ==}
-
   /caniuse-lite@1.0.30001495:
     resolution: {integrity: sha512-F6x5IEuigtUfU5ZMQK2jsy5JqUUlEFRVZq8bO2a+ysq5K7jD6PPc9YXZj78xDNS3uNchesp1Jw47YXEqr+Viyg==}
-    dev: false
 
   /case-sensitive-paths-webpack-plugin@2.4.0:
     resolution: {integrity: sha512-roIFONhcxog0JSSWbvVAh3OocukmSgpqOH6YpMkCvav/ySIV3JKg4Dc8vYtQjYi/UxpNE36r/9v+VqTQqgkYmw==}
@@ -5675,6 +5673,24 @@ packages:
       - supports-color
     dev: false
 
+  /dexie-cloud-addon@4.0.7(dexie@4.0.7):
+    resolution: {integrity: sha512-zc+cqkf9YtaLGluHQJ6DpW3se4BCrYhSuIlFJ8Y/7FYLn5KC8gIG6SNZeY0FaGydFjTqZC/7lZz72UcavBqdBg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      dexie: ^4.0.1-alpha.5
+    dependencies:
+      dexie: 4.0.7
+      dexie-cloud-common: 1.0.34
+      rxjs: 7.5.6
+    dev: false
+
+  /dexie-cloud-common@1.0.34:
+    resolution: {integrity: sha512-ayq04RKKZI/ldCc9gcm1WVAXMevHlupGfBRUDT1uUmjgrctjIIXRyJrAk1rL/d66S+rSGtKrJqoRS0pgUpLWKA==}
+    dev: false
+
+  /dexie@4.0.7:
+    resolution: {integrity: sha512-M+Lo6rk4pekIfrc2T0o2tvVJwL6EAAM/B78DNfb8aaxFVoI1f8/rz5KTxuAnApkwqTSuxx7T5t0RKH7qprapGg==}
+
   /di@0.0.1:
     resolution: {integrity: sha512-uJaamHkagcZtHPqCIHZxnFrXlunQXgBOsZSUOWwFw31QJCAbyTBoHMW75YOTur5ZNx8pIeAKgf6GWIgaqqiLhA==}
     dev: true
@@ -5858,12 +5874,8 @@ packages:
       jake: 10.8.7
     dev: false
 
-  /electron-to-chromium@1.4.241:
-    resolution: {integrity: sha512-e7Wsh4ilaioBZ5bMm6+F4V5c11dh56/5Jwz7Hl5Tu1J7cnB+Pqx5qIF2iC7HPpfyQMqGSvvLP5bBAIDd2gAtGw==}
-
   /electron-to-chromium@1.4.423:
     resolution: {integrity: sha512-y4A7YfQcDGPAeSWM1IuoWzXpg9RY1nwHzHSwRtCSQFp9FgAVDgdWlFf0RbdWfLWQ2WUI+bddUgk5RgTjqRE6FQ==}
-    dev: false
 
   /email-addresses@5.0.0:
     resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
@@ -8697,7 +8709,7 @@ packages:
         optional: true
     dependencies:
       abab: 2.0.6
-      acorn: 8.10.0
+      acorn: 8.11.2
       acorn-globals: 6.0.0
       cssom: 0.4.4
       cssstyle: 2.3.0
@@ -9425,10 +9437,6 @@ packages:
 
   /node-releases@2.0.12:
     resolution: {integrity: sha512-QzsYKWhXTWx8h1kIvqfnC++o0pEmpRQA/aenALsL2F4pqNVr7YzcdMlDij5WBnwftRbJCNJL/O7zdKaxKPHqgQ==}
-    dev: false
-
-  /node-releases@2.0.6:
-    resolution: {integrity: sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==}
 
   /node-watch@0.7.2:
     resolution: {integrity: sha512-g53VjSARRv1JdST0LZRIg8RiuLr1TaBbVPsVvxh0/0Ymvi0xYUjDuoqQQAWtHJQUXhiShowPT/aXKNeHBcyQsw==}
@@ -10898,7 +10906,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.21.4
       address: 1.2.2
-      browserslist: 4.21.3
+      browserslist: 4.21.7
       chalk: 4.1.2
       cross-spawn: 7.0.3
       detect-port-alt: 1.1.6
@@ -13036,6 +13044,16 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
+  /update-browserslist-db@1.0.11(browserslist@4.21.3):
+    resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
+    dependencies:
+      browserslist: 4.21.3
+      escalade: 3.1.1
+      picocolors: 1.0.0
+
   /update-browserslist-db@1.0.11(browserslist@4.21.7):
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
     hasBin: true
@@ -13046,16 +13064,6 @@ packages:
       escalade: 3.1.1
       picocolors: 1.0.0
     dev: false
-
-  /update-browserslist-db@1.0.7(browserslist@4.21.3):
-    resolution: {integrity: sha512-iN/XYesmZ2RmmWAiI4Z5rq0YqSiv0brj9Ce9CfhNE4xIW2h+MFxcgkxIzZ+ShkFPUkjU3gQ+3oypadD3RAMtrg==}
-    hasBin: true
-    peerDependencies:
-      browserslist: '>= 4.21.0'
-    dependencies:
-      browserslist: 4.21.3
-      escalade: 3.1.1
-      picocolors: 1.0.0
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
